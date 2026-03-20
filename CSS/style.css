@@ -37,3 +37,43 @@ header div a {
     font-weight: bold;
     color: var(--violet-doux);
 }
+li {
+    list-style: none;
+    margin-left: 15px;
+   
+}
+ul {display: flex;}
+
+ul li a{
+text-decoration: none;
+color: var(--gris-tres-fonce);
+margin: 10px 0;
+font-weight: 600;
+font-size: 1.1rem;
+position: relative;
+padding: 10px 0;
+}
+ul li :hover {
+    color:var(--violet-doux);
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background-color: var(--violet-doux);
+    transition:width 0.3s ease;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
+a.active {
+    color:var(--violet-doux);
+}
+a.active ::after{
+    width:100%;
+}
