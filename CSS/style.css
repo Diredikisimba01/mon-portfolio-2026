@@ -255,9 +255,199 @@ footer div:hover {
 }
 
     
+.contact {
+    width: 500px;
+    margin: 6rem auto;
+    text-align: center;
+}
 
+.contact-info {
+    margin: 1.5rem 0;
+    color: var(--gris-fonce);
+    font-size: 1.2rem;
+}
 
+.whatsapp-btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
 
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+    transform: translateY(-3px);
+}
 
+.contact-form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
 
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
 
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--gris-tres-fonce);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--gris-clair);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--violet-doux);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--violet-fonce);
+}
+/* Grille des projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* réduit la largeur minimale */
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* Carte projet */
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 0.9rem; /* taille de texte légèrement réduite */
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* Image de la carte */
+.card-image img {
+    width: 100%;
+    height: 150px; /* fixe la hauteur pour compacter */
+    object-fit: cover;
+}
+
+/* Contenu de la carte */
+.card-content {
+    padding: 0.8rem 1rem; /* réduit le padding */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titre */
+.card-content h3 {
+    margin: 0 0 0.2rem 0;
+    font-size: 1rem; /* titre plus petit */
+    color: #333;
+}
+
+/* Description */
+.card-content p {
+    font-size: 0.82rem; /* texte plus compact */
+    color: #666;
+    margin: 0;
+}
+
+/* Tags */
+.tags {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem; /* tags plus petits */
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.tag:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Liens Code et Démo */
+.card-footer a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.card-footer a:hover {
+    color: #0056b3;
+}
+
+/* Icônes */
+.card-footer i {
+    font-size: 0.85rem;
+}
+/* Titre principal */
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/* Soulignement centré permanent */
+main h1::after {
+    content: '';
+    position: absolute;
+    bottom: -8px; /* distance sous le texte */
+    left: 50%;     /* départ au milieu */
+    transform: translateX(-50%); /* centre horizontal */
+    width: 80px;    /* longueur du soulignement */
+    height: 3px;
+    background-color: var(--violet-doux);
+    border-radius: 2px;
+}
