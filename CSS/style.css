@@ -451,3 +451,61 @@ main h1::after {
     background-color: var(--violet-doux);
     border-radius: 2px;
 }
+(style comme projets 🔥)
+.divertissement { text-align: center; margin: 6rem 2rem; } .div-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; width: 90%; margin: 3rem auto; } .div-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease; } .div-card:hover { transform: translateY(-8px); } .div-image { height: 200px; overflow: hidden; } .div-image img { width: 100%; height: 100%; object-fit: cover; } .div-content { padding: 1.5rem; } .div-content h3 { color: var(--violet-doux); margin-bottom: 0.5rem; } .div-content p { color: var(--gris-fonce); } /* Responsive */ @media (max-width: 768px) { .div-grid { grid-template-columns: 1fr; } } 
+
+
+
+/* Grid identique */
+.passions .div-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+/* Carte */
+.passions .div-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Image bien proportionnée */
+.passions .div-image {
+    width: 100%;
+    height: 160px; /* taille équilibrée */
+    overflow: hidden;
+}
+
+.passions .div-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenu */
+.passions .div-content {
+    padding: 1.5rem;
+}
+
+.passions .div-content h3 {
+    color: var(--violet-doux);
+    margin-bottom: 0.5rem;
+}
+
+.passions .div-content p {
+    color: var(--gris-fonce);
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .passions .div-grid {
+        grid-template-columns: 1fr;
+    }
+}
